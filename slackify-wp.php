@@ -1,4 +1,7 @@
 <?php
+if ( ! defined( 'ABSPATH' ) ) {
+	exit; // Exit if accessed directly.
+}
 /*
  * Plugin Name:       Slickify WP
  * Plugin URI:        https://github.com/kamalahmed/slickify-wp
