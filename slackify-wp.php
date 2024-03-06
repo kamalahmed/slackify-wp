@@ -17,7 +17,7 @@
 
 class Slickify_WP
 {
-    protected $slack_webhook_url = ''
+    protected $slack_webhook_url = '';
     public function __construct()
     {
         add_action('woocommerce_new_order', [$this, 'send_slack_order_notification'], 10, 1);
