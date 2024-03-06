@@ -22,7 +22,7 @@ class Slickify_WP
     {
         add_action('woocommerce_new_order', [$this, 'send_slack_order_notification'], 10, 1);
         add_action('transition_post_status', [$this, 'send_slack_forum_notification'], 10, 3);
-        $this->slack_webhook_url = defined('SLACK_WEBHOOK_URL') ? SLACK_WEBHOOK_URL : 'https://hooks.slack.com/services/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';
+        $this->slack_webhook_url = defined('SLACK_WEBHOOK_URL') ? SLACK_WEBHOOK_URL : '';
 
     }
 
